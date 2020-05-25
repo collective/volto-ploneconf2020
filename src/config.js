@@ -19,12 +19,19 @@ import {
   blocks as defaultBlocks,
 } from '@plone/volto/config';
 
+import { PersonView, PresentationView } from '@package/components';
+
 export const settings = {
   ...defaultSettings,
 };
 
 export const views = {
   ...defaultViews,
+  contentTypesViews: {
+    ...defaultViews.contentTypesViews,
+    person: PersonView,
+    presentation: PresentationView,
+  },
 };
 
 export const widgets = {

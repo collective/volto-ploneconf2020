@@ -8,3 +8,8 @@
  *   Footer,
  * };
  */
+
+import PersonView from './theme/View/PersonView';
+import PresentationView from './theme/View/PresentationView';
+
+export { PersonView, PresentationView };
