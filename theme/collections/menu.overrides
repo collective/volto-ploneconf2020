@@ -1,0 +1,23 @@
+.navigation,
+.tools {
+  .ui.secondary.pointing.menu {
+    border: 0;
+    margin: 0 0 0 40px;
+
+    @media only screen and (max-width: @largestTabletScreen) {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+
+    .item {
+      padding-top: @relativeBig;
+      margin: 0;
+      text-transform: uppercase;
+
+      @media only screen and (min-width: @largestTabletScreen) {
+	padding: 1.7em 0 @relativeBig;
+	margin: 2em unit(@relativeLarge * 2, em) 0 0;
+      }
+    }
+  }
+}
