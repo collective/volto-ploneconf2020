@@ -11,5 +11,6 @@
 
 import PersonView from './theme/View/PersonView';
 import PresentationView from './theme/View/PresentationView';
+import TrainingView from './theme/View/TrainingView';
 
-export { PersonView, PresentationView };
+export { PersonView, PresentationView, TrainingView };

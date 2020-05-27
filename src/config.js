@@ -19,7 +19,7 @@ import {
   blocks as defaultBlocks,
 } from '@plone/volto/config';
 
-import { PersonView, PresentationView } from '@package/components';
+import { PersonView, PresentationView, TrainingView } from '@package/components';
 
 export const settings = {
   ...defaultSettings,
@@ -28,9 +28,10 @@ export const settings = {
 export const views = {
   ...defaultViews,
   contentTypesViews: {
+    training_class: TrainingView,
     ...defaultViews.contentTypesViews,
     person: PersonView,
-    presentation: PresentationView,
+    presentation: PresentationView
   },
 };
 
