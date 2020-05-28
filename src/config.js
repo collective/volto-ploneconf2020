@@ -28,10 +28,10 @@ export const settings = {
 export const views = {
   ...defaultViews,
   contentTypesViews: {
-    training_class: TrainingView,
     ...defaultViews.contentTypesViews,
     person: PersonView,
-    presentation: PresentationView
+    presentation: PresentationView,
+    training_class: TrainingView,
   },
 };
 
