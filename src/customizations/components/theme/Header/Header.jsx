@@ -7,11 +7,12 @@ import React, { Component } from 'react';
 import { Container, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Logo from '@package/customizations/components/theme/Logo/Logo';
+import LogoMini from '@package/customizations/components/theme/LogoMini/LogoMini';
 
 import {
   Anontools,
   LanguageSelector,
-  Logo,
   Navigation,
   SearchWidget,
 } from '@plone/volto/components';
@@ -56,6 +57,9 @@ class Header extends Component {
                 <Logo />
               </div>
               <Navigation pathname={this.props.pathname} />
+              <div className="logomini">
+                <LogoMini />
+              </div>
             </div>
           </div>
         </Container>

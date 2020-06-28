@@ -1,0 +1,96 @@
+.sponsors {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : repeat(4, auto);
+    grid-gap             : 5rem;
+
+    .icon {
+        opacity        : 0.1;
+        border         : 1.2rem solid @darkColor;
+        border-radius  : 50%;
+        display        : inline-flex;
+        height         : 15rem;
+        width          : 15rem;
+        justify-content: center;
+        align-items    : center;
+        position       : absolute;
+
+        &::before {
+            color      : @darkColor;
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            font-size  : 9rem;
+        }
+    }
+
+    .gold {
+        grid-row   : 1;
+        grid-column: 1 / span 2;
+
+        .icon {
+            right: -4rem;
+            top  : -2.5rem;
+
+            &::before {
+                content: "\f005";
+            }
+        }
+    }
+
+    .silver {
+        grid-row   : 2;
+        grid-column: 1 / span 2;
+
+        .icon {
+            left: -3rem;
+            top : 10%;
+
+            &::before {
+                content: "\f5c0";
+            }
+        }
+    }
+
+    .bronze {
+        grid-row   : 3;
+        grid-column: 1 / span 2;
+
+        .icon {
+            right : -2rem;
+            bottom: -2.5rem;
+
+            &::before {
+                font-weight: 400;
+                content    : "\f005";
+            }
+        }
+    }
+
+    .partner {
+        grid-row   : 4;
+        grid-column: 1;
+
+        .icon {
+            left  : -2rem;
+            bottom: -1rem;
+
+            &::before {
+                content: "\f4c4";
+            }
+        }
+    }
+
+    .patronage {
+        grid-row   : 4;
+        grid-column: 2;
+
+        .icon {
+            left: -2rem;
+            top : -2rem;
+
+            &::before {
+                content: "\f004";
+            }
+        }
+    }
+}

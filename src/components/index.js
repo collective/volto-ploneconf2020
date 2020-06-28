@@ -15,6 +15,11 @@ import TrainingView from './theme/View/TrainingView';
 
 export { PersonView, PresentationView, TrainingView };
 
+import AboutViewBlock from './Blocks/About/View';
+import AboutEditBlock from './Blocks/About/Edit';
+
+export { AboutViewBlock, AboutEditBlock };
+
 import CallforSponsorsViewBlock from './Blocks/CallforSponsors/View';
 import CallforSponsorsEditBlock from './Blocks/CallforSponsors/Edit';
 

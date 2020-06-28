@@ -1,0 +1,38 @@
+.venue {
+    article {
+        display: flex;
+    }
+
+    .square {
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        margin-top     : -2rem;
+        margin-bottom  : 0;
+        margin-right   : 5rem;
+        min-width      : 7vw;
+
+        div {
+            width            : 100%;
+            padding-bottom   : 100%;
+            background-repeat: no-repeat;
+            background-size  : contain;
+            margin           : 2rem;
+
+            &:nth-child(1) {
+                background-image: url("../../src/assets/images/beer.png");
+                background-color: @secondaryColor;
+            }
+
+            &:nth-child(2) {
+                background-image: url("../../src/assets/images/tower.png");
+                background-color: @mediumColor;
+            }
+
+            &:nth-child(3) {
+                background-image: url("../../src/assets/images/snail.png");
+                background-color: @primaryColor;
+            }
+        }
+    }
+}

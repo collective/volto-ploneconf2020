@@ -1,0 +1,26 @@
+.callsponsors {
+    .image {
+        background-image : url("../../src/assets/images/sponsors.jpg");
+    }
+
+    .footer {
+        text-align: left;
+
+        .info {
+            background-color: @secondaryColor;
+            padding         : 1rem 3rem;
+            color           : @darkColor;
+            display         : inline-flex;
+            justify-content : center;
+            align-items     : center;
+
+            &::after {
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                content    : "\f4c4";
+                margin-left: 1rem;
+                font-size  : 2.5rem;
+            }
+        }
+    }
+}

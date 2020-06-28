@@ -39,6 +39,7 @@ export const widgets = {
   ...defaultWidgets,
 };
 
+import { AboutViewBlock, AboutEditBlock } from '@package/components';
 import { CallforSponsorsViewBlock, CallforSponsorsEditBlock } from '@package/components';
 import { CountdownViewBlock, CountdownEditBlock } from '@package/components';
 import { PartyViewBlock, PartyEditBlock } from '@package/components';
@@ -51,6 +52,22 @@ export const blocks = {
   ...defaultBlocks,
   blocksConfig: {
     ...defaultBlocks.blocksConfig,
+    about: {
+      id: 'about',
+      title: 'About',
+      icon: heroSVG,
+      group: 'common',
+      view: AboutViewBlock,
+      edit: AboutEditBlock,
+      restricted: false,
+      mostUsed: false,
+      blockHasOwnFocusManagement: true,
+      sidebarTab: 0,
+      security: {
+        addPermission: [],
+        view: [],
+      },
+    },
     callforsponsors: {
       id: 'callforsponsors',
       title: 'Call for sponsors',

@@ -1,0 +1,147 @@
+html {
+    font-size: 62.5%;
+
+    body {
+        background-color: @backgroundColor;
+        color           : @mediumColor;
+        font-weight     : lighter;
+        font-size       : 2rem;
+
+        &::after,
+        &::before {
+            content : " ";
+            display : block;
+            width   : 40%;
+            height  : 100%;
+            position: fixed;
+            z-index : -1;
+            left    : 10%;
+        }
+
+        &::before {
+            background-image : url("../../src/assets/images/background.jpg");
+            background-repeat: no-repeat;
+            background-size  : cover;
+            opacity          : 0.5;
+        }
+
+        &::after {
+            background-color: @primaryColor;
+            opacity         : 0.8;
+        }
+
+        #toolbar {
+            position: absolute;
+        }
+
+        #main .ui.container {
+            width: 80% !important;
+        }
+
+        .ui.segment,
+        .ui.basic.segment,
+        .ui.secondary.segment {
+            font-size       : 2rem;
+            margin          : 0;
+            padding         : 0;
+            background-color: transparent;
+            border          : none;
+        }
+    }
+}
+
+.documentFirstHeading {
+    visibility: hidden;
+}
+
+h2 {
+    font-size     : 4rem;
+    text-transform: uppercase;
+    color         : @darkColor;
+    font-family   : @secondaryFont;
+}
+
+h3 {
+    font-weight: medium;
+    font-size  : 2rem;
+}
+
+.primaryColor {
+    color: @primaryColor;
+}
+
+aside.title {
+    font-weight    : medium;
+    font-family    : @secondaryFont;
+    color          : @lightColor;
+    font-size      : 7rem;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    text-transform : uppercase;
+}
+
+.button-yellow {
+    background-color: @secondaryColor  !important;
+    padding         : 1rem 3rem !important;
+    color           : @darkColor  !important;
+    display         : inline-flex;
+    justify-content : center;
+    align-items     : center;
+    font-family     : @secondaryFont;
+    border          : none !important;
+
+    &::after {
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        margin-left: 1rem;
+        font-size  : 2.5rem;
+        transform  : rotateZ(20deg);
+    }
+}
+
+section {
+    margin-bottom: 10rem;
+
+    &.title-block {
+        display              : grid;
+        grid-template-columns: 5% auto 55%;
+        grid-template-rows   : 1fr;
+        grid-gap             : 4rem;
+
+        &>aside {
+            grid-column: 2;
+            grid-row   : 1;
+        }
+
+        article {
+            grid-column: 3;
+            grid-row   : 1;
+        }
+    }
+
+    &.block-img {
+        display              : grid;
+        grid-template-columns: auto 30%;
+        grid-template-rows   : 1fr;
+        grid-gap             : 5rem;
+
+        .block-element {
+            grid-column: 1;
+            grid-row   : 1;
+            padding    : 6rem;
+        }
+
+        .image {
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            grid-column        : 2;
+            grid-row           : 1;
+            width              : 100%;
+            padding-bottom     : 100%;
+            display            : block;
+            margin-bottom      : 1em;
+            background-position: center;
+        }
+    }
+}

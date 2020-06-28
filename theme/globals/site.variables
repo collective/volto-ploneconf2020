@@ -1,3 +1,9 @@
-/*
- *@fontName : 'Comic Sans MS';
- */
+@fontName : 'Roboto';
+@secondaryFont: 'Circular', Arial, Helvetica, sans-serif;;
+
+@primaryColor: #0083BE;
+@secondaryColor: #FFDA3B;
+@lightColor: #ffffff;
+@mediumColor: #707070;
+@darkColor: #151515;
+@backgroundColor: #F5F5F5;
