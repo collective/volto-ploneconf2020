@@ -85,6 +85,7 @@ html body #main {
                             text-transform: none;
                             padding       : 0;
                             align-self    : center;
+                            border        : none !important;
 
                             &.active {
                                 border: none;
@@ -97,6 +98,16 @@ html body #main {
                     }
                 }
             }
+        }
+    }
+}
+
+body:not(.siteroot) {
+    #main .ui.basic.segment.header-wrapper {
+        margin-bottom: 5rem;
+
+        .header .logo-nav-wrapper .logo {
+            display: none;
         }
     }
 }

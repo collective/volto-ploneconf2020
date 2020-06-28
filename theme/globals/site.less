@@ -145,3 +145,17 @@ section {
         }
     }
 }
+
+body:not(.siteroot) {
+    main {
+        &>div>.ui.container {
+            background-color: @lightColor;
+            padding         : 4rem;
+            box-shadow      : 0 3px 6px rgba(0, 0, 0, .1);
+        }
+    }
+
+    .documentFirstHeading {
+        visibility: visible;
+    }
+}
