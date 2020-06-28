@@ -1,0 +1,67 @@
+#footer {
+    background-color: @primaryColor;
+    color           : @lightColor;
+    border-top      : 1rem solid @secondaryColor;
+    margin-top      : 10rem;
+
+    .ui.container {
+        display              : grid;
+        grid-template-columns: 1fr 20rem 1fr;
+        grid-template-rows   : auto;
+
+        .plone {
+            grid-row   : 1;
+            grid-column: 1;
+            font-size  : 1.6rem;
+            padding    : 2rem 10rem 2rem 0;
+            font-weight: normal;
+
+            a {
+                color: @lightColor;
+            }
+
+            img {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .logo {
+            grid-row   : 1;
+            grid-column: 2;
+            font-weight: normal;
+            margin-top : -5rem;
+            text-align: center;
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        .links {
+            grid-row   : 1;
+            grid-column: 3;
+            text-align : right;
+            padding    : 2rem 0 2rem 10rem;
+
+            a {
+                color: @lightColor;
+            }
+
+            &>a {
+                display       : block;
+                text-transform: uppercase;
+                font-size     : 1.6rem;
+                font-weight   : normal;
+            }
+
+            .social-share {
+                margin-top: 0.5rem;
+
+                a {
+                    font-size  : 2.5rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
