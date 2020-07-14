@@ -36,3 +36,27 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .venue .square {
+        min-width: 15vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .venue {
+        article {
+            flex-direction: column-reverse;
+        }
+
+        .square {
+            margin        : 0;
+            flex-direction: row;
+            min-width     : 0;
+
+            div {
+                padding-bottom: calc((100% / 3) - 4rem);
+            }
+        }
+    }
+}

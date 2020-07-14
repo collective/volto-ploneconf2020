@@ -118,13 +118,13 @@ const Footer = ({ intl }) => (
         </Link>
         <div className="social-share">
           <Link className="item" to="/contact-form">
-            <i class="fas fa-envelope-square"></i>
+            <i className="fas fa-envelope-square"></i>
           </Link>
           <Link className="item" to="/">
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
           </Link>
           <Link className="item" to="/">
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
           </Link>
         </div>
       </div>

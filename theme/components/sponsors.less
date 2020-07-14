@@ -104,3 +104,36 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .sponsors {
+        grid-template-columns: auto;
+        grid-template-rows   : repeat(5, auto);
+
+        .gold {
+            grid-row   : 1;
+            grid-column: 1;
+        }
+
+        .silver {
+            grid-row   : 2;
+            grid-column: 1;
+        }
+
+        .bronze {
+            grid-row   : 3;
+            grid-column: 1;
+        }
+
+        .partner {
+            grid-row   : 4;
+            grid-column: 1;
+        }
+
+        .patronage {
+            grid-row   : 5;
+            grid-column: 1;
+        }
+
+    }
+}

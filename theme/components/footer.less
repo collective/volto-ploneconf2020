@@ -30,10 +30,10 @@
             grid-column: 2;
             font-weight: normal;
             margin-top : -5rem;
-            text-align: center;
+            text-align : center;
 
             a {
-                display: inline-block;
+                display: block;
             }
         }
 
@@ -61,6 +61,49 @@
                     font-size  : 2.5rem;
                     margin-left: 0.5rem;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #footer .ui.container {
+        display              : grid;
+        grid-template-columns: auto;
+        grid-template-rows   : repeat(3, auto);
+
+        .logo {
+            grid-row   : 1;
+            grid-column: 1;
+            text-align : center;
+
+            .ui.image {
+                max-width: 15rem;
+                display  : inline-block;
+            }
+        }
+
+        .plone {
+            grid-row   : 2;
+            grid-column: 1;
+            padding    : 0;
+            text-align : center;
+
+            img.ui.image {
+                display   : inline-block;
+                margin-top: 2rem;
+            }
+        }
+
+        .links {
+            grid-row     : 3;
+            grid-column  : 1;
+            padding      : 0;
+            text-align   : center;
+            margin-bottom: 2rem;
+
+            .social-share a {
+                font-size: 4rem;
             }
         }
     }
