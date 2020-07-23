@@ -33,7 +33,7 @@ const Sprints = {
 const View = () => {
   return (
     <section className="title-block schedule">
-      <aside class="title">
+      <aside className="title">
         <div>Schedule</div>
       </aside>
       <article>

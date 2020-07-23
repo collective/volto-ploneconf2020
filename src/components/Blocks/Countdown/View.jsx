@@ -14,7 +14,7 @@ const View = () => {
                 <h3>The community is waiting for you</h3>
                 <a href="" className="button-yellow">Register now !</a>
             </aside>
-            <article class="block-element">
+            <article className="block-element">
                 <span className="subtitle">Join us for </span>
                 <h2>this new plone conference</h2>
                 <div className="timer">

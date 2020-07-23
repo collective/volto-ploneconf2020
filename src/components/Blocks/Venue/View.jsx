@@ -17,7 +17,7 @@ const Venue = {
 const View = () => {
   return (
     <section className="title-block venue">
-      <aside class="title">
+      <aside className="title">
         <div>Venue</div>
       </aside>
       <article>

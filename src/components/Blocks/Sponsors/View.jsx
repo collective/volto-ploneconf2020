@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const View = () => {
   return (
     <section className="sponsors">
-      <div class="block-element gold">
+      <div className="block-element gold">
         <h2 className="title">
           <span className="primaryColor">Gold </span>
           <span>Sponsor</span>
@@ -29,7 +29,7 @@ const View = () => {
         </div>
         <div className="icon"></div>
       </div>
-      <div class="block-element silver">
+      <div className="block-element silver">
         <h2 className="title">
           <span className="primaryColor">Silver </span>
           <span>Sponsor</span>
@@ -37,7 +37,7 @@ const View = () => {
         <div className="images"></div>
         <div className="icon"></div>
       </div>
-      <div class="block-element bronze">
+      <div className="block-element bronze">
         <h2 className="title">
           <span className="primaryColor">Bronze </span>
           <span>Sponsor</span>
@@ -45,7 +45,7 @@ const View = () => {
         <div className="images"></div>
         <div className="icon"></div>
       </div>
-      <div class="block-element partner">
+      <div className="block-element partner">
         <h2 className="title">
           <span className="primaryColor">Technical & Media </span>
           <span>partner</span>
@@ -53,7 +53,7 @@ const View = () => {
         <div className="images"></div>
         <div className="icon"></div>
       </div>
-      <div class="block-element patronage">
+      <div className="block-element patronage">
         <h2 className="title">
           <span>Under the patronage </span>
           <span className="primaryColor">patronage </span>

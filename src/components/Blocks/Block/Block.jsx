@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 const Block = ({ title, subtitle, text, footer, link }) => {
   return (
-    <div class="block-element">
+    <div className="block-element">
       <Link to={link}>
         <h2 className="title">{title}</h2>
         <h3 className="subtitle">{subtitle}</h3>
