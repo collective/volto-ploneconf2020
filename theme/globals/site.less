@@ -160,6 +160,9 @@ body.siteroot {
 
     .documentFirstHeading {
         visibility: hidden;
+        font-size : 0rem;
+        margin    : 0;
+        padding   : 0;
     }
 }
 
@@ -222,6 +225,59 @@ body:not(.siteroot) {
             width       : 90% !important;
             margin-right: 5% !important;
             margin-left : 5% !important;
+        }
+
+        aside.title {
+            font-size: 5rem;
+        }
+
+        h1,
+        h2,
+        .countdown article h2,
+        .schedule .block-element h2 {
+            font-size: 3rem;
+
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        section.block-img .block-element {
+            padding: 4rem;
+        }
+
+        .countdown article .subtitle {
+            font-size: 3rem;
+        }
+
+        .countdown article .timer {
+            grid-template-columns: repeat(4, 1fr);
+            margin               : 2rem auto 0 auto;
+        }
+
+        .countdown article .timer [class$="-n"] {
+            font-size: 2rem;
+            padding  : 1rem 0;
+        }
+
+        .countdown article .timer [class$="-b"] {
+            font-size: 1rem;
+            padding  : 0.5rem;
+        }
+
+        .callsponsors .footer .info {
+            flex-direction: column;
+            width         : 100%;
+
+            &::after {
+                margin-left: 0;
+                margin-top : 0.5rem;
+            }
+        }
+
+        #footer {
+            margin-top: 5rem;
         }
     }
 }
